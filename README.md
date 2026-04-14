@@ -1,23 +1,25 @@
-﻿# C Programming Complete Roadmap
+﻿# C Programming Portfolio
 
-A structured, GitHub-ready C programming repository from basics to advanced with practical projects.
+A GitHub-ready C programming repository that moves from fundamentals to advanced topics and finishes with practical CLI projects. It is designed to show both learning depth and real implementation work in one place.
 
-## Structure
-- src/: topic-wise progression from basics to system-level concepts
-- projects/: portfolio-grade CLI projects
-- docs/: roadmap, setup, and style guidance
-- tests/: sample input/output test data
-- scripts/: helper scripts for build and execution
+## What Is Inside
 
-## Quick Start
-1. Install a C compiler (GCC/Clang/MSVC).
-2. Build all examples:
-   - On Linux/macOS: `make all`
-   - On Windows (MinGW): `mingw32-make all`
-3. Build a project:
-   - `make -C projects/01_calculator`
+- `src/` - topic-by-topic examples from basics through system programming
+- `projects/` - portfolio projects with their own build files and READMEs
+- `docs/` - roadmap, setup notes, and style guidance
+- `tests/` - sample inputs and expected outputs
+- `scripts/` - helper scripts for build and run workflows
+
+## Highlights
+
+- Clear progression from introductory C syntax to memory, files, data structures, and algorithms
+- Multiple examples per topic so the repository looks complete, not just minimal
+- Mini exercises in each topic folder for practice and interview-style review
+- Six practical projects that demonstrate problem solving and CLI program design
+- Make-based build automation that works on Windows with MinGW and on Unix-like systems with GNU Make
 
 ## Learning Path
+
 1. Basics
 2. Control Flow
 3. Functions
@@ -30,7 +32,8 @@ A structured, GitHub-ready C programming repository from basics to advanced with
 10. Algorithms
 11. System Programming
 
-## Projects Included
+## Projects
+
 1. Calculator
 2. Student Management System
 3. Tic Tac Toe
@@ -38,5 +41,40 @@ A structured, GitHub-ready C programming repository from basics to advanced with
 5. File Organizer
 6. DSA Toolkit
 
+## Build
+
+Use the root makefile to compile the topic examples.
+
+```bash
+make all
+```
+
+On Windows with MinGW:
+
+```bash
+mingw32-make all
+```
+
+To build an individual project:
+
+```bash
+make -C projects/01_calculator
+```
+
+## Run Example
+
+The calculator project can be executed with sample input from `tests/samples/`.
+
+```bash
+"12 + 8" | projects/01_calculator/main.exe
+```
+
+## Repository Goals
+
+- Serve as a polished C learning portfolio
+- Provide recruiters a quick view of progression and project quality
+- Offer a clean base for future expansions such as pointer-heavy utilities, more data structures, and larger command-line tools
+
 ## License
+
 MIT
